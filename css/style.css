@@ -1,0 +1,243 @@
+/* ------------------ GLOBAL STYLING --------------------*/
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    color: #333;
+	font-weight: 200;
+	width: 100%;
+	background-color: #1E2422;
+}
+  
+  section {    
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+  
+  
+  h1, h2, {
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+hr {
+	 height: 1px;
+        background-color: #FA7B7D;
+        border: none;
+    }
+/*---- ESTABLISH YOUR OWN TYPOGRAPHIC HIERARCHY WHICH SHOULD BE BASED ON YOUR FONT CHOICES ----*/
+
+  h1 {font-size: 4em; margin-bottom: .3em; font-family: quasimoda, sans-serif;}
+  h2 {font-size: 2.75em; margin: 1em 0; color: #439ff6; font-family: quasimoda, sans-serif;}
+  h3 {font-size: 1.90em; margin: 3em 0 1em 0; font-family: quasimoda, sans-serif;}
+  
+  p {font-size: 1.25em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    font-weight: 200;
+	font-family: 'Poppins', sans-serif;
+}
+  
+  header {
+    width: 100%;
+    font-family: bely-display, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    color: #fafafa;
+}
+  
+  header h1 { 
+    margin: 1em 0;
+    font-size: 5.25em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+  header h2 {
+    font-size: 2.75em;
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+  
+  .highlight {color: #439ff6}
+  
+  /*---------------- PORTFOLIO SECTION ------------------*/
+  
+ /* .portfolio h2 { max-width: 960px; margin: 3em auto;} */
+  
+ .portfolio{
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-gap: 10px;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px auto); */
+  
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ; 
+  }
+   
+  .portfolio h1 {
+    text-align: center}
+  
+  li {
+    position: relative;}
+  
+  .portfolio-img {;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .portfolio-title {
+    font-family: proxima-nova, sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.85em;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+  }
+  
+  .portfolio-title:hover {
+    background: #333;
+    color: #fff
+  }
+  
+  /*---------------- BACKGROUNDS ----------------*/
+  .background-colour {
+      padding: 4em 0;
+      background: #6178B0;
+      color: #fafafa;}
+  
+  
+  /*--------------------- STYLING LINKS -----------------*/
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #FA7B7D;
+    border-bottom: 1px dotted;}
+  
+  .biog a {
+      color: #fafafa;
+      border-bottom: 1px dotted;
+    }
+    
+  .biog a:hover {
+      color: #103254;
+  }
+    
+  .background-colour a {
+    color: rgb(150, 230, 254);
+    text-decoration: none;
+}
+  
+  .background-colour a:hover {
+    color: #fafafa;
+    border-bottom: 1px dotted;}
+  
+  .portfolio a {
+    color: #ffffff;
+    border-bottom: none;}
+  
+  .portfolio a:hover {
+    opacity: .8;}
+	
+	
+	
+/*---------------------COLUMNS---------------------*/
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+  
+  /*------------------- NAVIGATION ------------------*/
+.nav {
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: #1E2422;
+    padding: 1em 0;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	position: sticky;
+	z-index: 9;
+}
+      
+  
+  nav ul li {
+    display: inline;
+    background: none;
+}
+  
+  nav a:link {
+    color: #000000;
+}
+  
+  nav a:visited {
+    color: #000000;
+}
+  
+  nav a:hover {
+    border-bottom: none;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+} 
+    
+
+  
+  /* ------------------- IMAGES -------------------- */
+  img {
+    display: block;
+    margin: auto; 
+    max-width: 100%; }
+
+
+
+/*---------------------FOOTER----------------------------*/
+
+#contact {
+	bottom: 0;
+    background-color: transparent;
+    color: #909191;
+    text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	padding: 25px 5px 20px 5px;
+	font-size: 14px;
+	height: 100px;
+	margin-top: opx;
+}
+
+
